@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+
+{% block title %} College {% endblock %}
+
+{% block content %} 
+
+<ol>
+<li><a href={{scholarship}}>Scholarship</a></li>
+<li><a href={{curr_url}}>Conference</a></li>
+<li><a href={{curr_url}}>Student Organization</a></li>
+<li><a href={{curr_url}}>Preparation</a></li>
+<li><a href={{curr_url}}>College Guidance</a></li>
+<li><a href={{curr_url}}>Career Guidance</a></li>
+</ol>
+
+{% endblock %}
+
+{% block filter %} 
+
+<form>
+<input float=left type="checkbox" name="lang" value="Spanish">Spanish<br>
+<select float=left name="individual">
+<option value="parent">Parent</option>
+<option value="student">Student</option>
+<option value="educator">Educator</option>
+</select>
+<textarea float=left rows="1" cols="25">
+Key word search
+</textarea>
+</form>
+
+{% endblock %}
