@@ -1,0 +1,568 @@
+/*
+	
+	site width: 965px
+	
+*/
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, blockquote, fieldset, input {
+	margin:0;
+	padding:0;
+}
+
+img {
+	border:none 
+}
+body{
+	/*background: #999933;*/
+	/*background: #fff url(/images/topbanner1.gif) repeat;*/
+	background: url("/images/background.jpg");
+	background-repeat: repeat-y; 
+	background-color:#9e9e9e;
+	font: 12px/18px Verdana, Arial, Helvetica, sans-serif; 
+  color: #6A6969;
+  line-height: 18px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+h1 {
+	font:bold 16px Verdana, Arial, Helvetica, sans-serif; 
+	color:#224990; 
+	line-height:18px;
+	padding-bottom: 10px;
+}
+h2 {
+	font:bold 14px Verdana, Arial, Helvetica, sans-serif; 
+	color:#224990; 
+	line-height:18px;
+	padding-bottom: 10px;
+}
+#headerWrapper{
+	margin: 0px auto 0 auto;
+	width:965px;
+}
+#header{
+	position: relative;
+	background: #fff url(/images/Topbanner02.jpg);
+	width:965px;
+	height: 95px;
+}
+
+#home-link {
+	position: absolute;
+	display: inline-block;
+	width: 965px;    /* width of the logo */
+	height: 95px;   /* height of the logo */
+	top: 0; left: 0; /* top-left corner of logo */
+	float: left;
+}
+
+
+#header #homeDiv{
+	/* width: 70px;  */
+	/* height: 30px;  */
+	width: 965px;
+	height: 95px;
+	left: 0px;
+	top: 0px;
+	background-color:#7e7e7e;
+	float:left;
+	position: relative;
+}
+
+#header #workshopDiv{
+	width: 302px;
+	height: 38px;
+	left: 290px;
+	top: 50px;
+	background: #fff url(/images/register_for_workshop3.jpg);
+	float:left;
+	position: relative;
+}
+
+#header #twitterDiv{
+	width: 20px;
+	height: 21px;
+	left: 900px;
+	top: 7px;
+	background: #fff url(/images/Twitter.jpg);
+	float:left;
+	position: relative;
+}
+#header #facebookDiv{
+	background:url("/images/Facebook.jpg") repeat scroll 0 0 #FFFFFF;
+	float:left;
+	height:18px;
+	left:912px;
+	position:relative;
+	top:7px;
+	width:19px
+}
+#header #donateDiv{
+	width: 114px;
+	height: 41px;
+	left: 800px;
+	top: 50px;
+	background-color:#7e7e7e;
+	float:left;
+	position: relative;
+}
+
+
+#header #myHSFDiv{
+	/* width: 70px;  */
+	/* height: 30px;  */
+	background-color:#7E7E7E;
+	color:#FFFFFF;
+	float:left;
+	height:25px;
+	left:792px;
+	padding-left:15px;
+	padding-top:8px;
+	position:relative;
+	top:62px;
+	width:52px;
+}
+
+#header #myHSFDiv a:link 
+	{font: 12px Arial,Verdana,sans-serif; color:#ffffff; text-decoration:none;}
+#header #myHSFDiv a:visited
+	{font: 12px Arial,Verdana,sans-serif; color:#ffffff; text-decoration:none;}
+#header #myHSFDiv a:hover
+	{font: 12px Arial,Verdana,sans-serif; color:#c53626; text-decoration:underline;}
+#home-link {
+	position: absolute;
+	display: inline-block;
+	width: 965px;    /* width of the logo */
+	height: 95px;   /* height of the logo */
+	/*top: 0; left: 0;*/ /* top-left corner of logo */
+	float: left;
+	/*visibility: hidden;*/
+	/*border: solid red 1px;*/
+}
+
+#workshop-link {
+	position: absolute;
+	display: inline-block;
+	width: 302px;    /* width of the logo */
+	height: 38px;   /* height of the logo */
+	float: left;
+}
+#twitter-link {
+	position: absolute;
+	display: inline-block;
+	width: 20px;    /* width of the logo */
+	height: 21px;   /* height of the logo */
+	float: left;
+}
+#facebook-link {
+	position: absolute;
+	display: inline-block;
+	width: 19px;    /* width of the logo */
+	height: 18px;   /* height of the logo */
+	float: left;
+}
+#myHSF-link {
+	position: absolute;
+	display: inline-block;
+	width: 70px;    /* width of the logo */
+	height: 30px;   /* height of the logo */
+	float: left;
+}
+
+#topNav{
+	margin: 0px auto 0 auto;
+	width:965px;
+	text-align:left;
+	background:#dc2632;
+	height: 30px;
+}
+#flashMedia{
+	margin: 0px auto 0 auto;
+	width:965px;
+	height: 263px;
+	z-index:1; 
+	background-color:#FFFFFF;
+}
+
+/*** body container ********************************************************/
+#container{
+	overflow:auto;
+	margin: 0 auto;
+	width:965px; 
+	background: url(/images/innerBk.gif) repeat-y;
+}
+/*** left column ********************************************************/
+#container #contLeft{
+	width: 178px; 
+	background-color:#bcbcbc;
+	float: left;
+}
+#container #contLeft .upperLinks{
+	width: 178px;
+	height: 39px;
+}
+#container #contLeft #search{
+	width: 178px;
+	height: 18px;
+}
+#container #contLeft #search .txtSearch{
+	height:14px;
+	width: 141px;
+	float:left;
+}
+#container #contLeft #search .btnSearch{
+	height:18px;
+	width: 33px;
+	float:left;
+}
+#container #contLeft #logoWMark{
+	width: 178px;
+	height:153px;
+	margin-top: 50px;
+	float:left;
+	background: url(/images/LogoWmark.jpg) no-repeat; 
+}
+	
+/*** centre column ********************************************************/
+#container #contCenter{
+	width: 447px;
+	/*width: 527px; - without padding */
+	background-color:#fff;
+	float: left;
+	padding: 22px 40px 40px 40px;
+}
+#container #contCenter #footerContainer{
+	padding-top: 30px;
+}
+#container #contCenter #footerContainer .footer p{
+	font:10px Verdana, Arial, Helvetica, sans-serif; color:#858381; line-height:12px;
+}
+
+#container #contCenter #footerContainer .footer{
+	border-top: solid 1px #979694;
+}
+#container #contCenter #footerContainer a:link 
+	{font: 9px Verdana, Arial, Helvetica, sans-serif; color:#ff8000; text-decoration:none;}
+#container #contCenter #footerContainer a:visited
+	{font: 9px Verdana, Arial, Helvetica, sans-serif; color:#ff8000; text-decoration:none;}
+#container #contCenter #footerContainer a:hover
+	{font: 9px Verdana, Arial, Helvetica, sans-serif; color:#ff8000; text-decoration:none;}
+
+
+/*** right column ********************************************************/
+#container #contRight{
+	background: #fff url(/images/roundedCornerRight.jpg) no-repeat;
+	/*width: 260px; - without padding */
+	width: 246px;
+	float: left;
+	padding: 23px 0px 0px 14px  
+}
+#container #contRight a:link 
+	{font: 12px Arial,Verdana,sans-serif; color:#224990; text-decoration:none;}
+#container #contRight a:visited
+	{font: 12px Arial,Verdana,sans-serif; color:#224990; text-decoration:none;}
+#container #contRight a:hover
+	{font: 12px Arial,Verdana,sans-serif; color:#224990; text-decoration:underline;}
+
+#container #contRight #upcomingEvents{
+	padding-bottom: 20px;
+}
+
+/*** right full column ********************************************************/
+#container #contCenterFull{
+	width: 707px;
+	/*width: 787px; - without padding */
+	background-color:#fff;
+	float: left;
+	padding: 40px 30px 40px 30px;
+}
+#container #contCenterFull ul, ol {
+	padding:10px 0 10px 40px;
+}
+#container #contCenterFull p{
+	padding: 5px 0px 5px 0px;
+}
+
+#container #contCenterFull a:link 
+	{font: 12px Verdana, Arial, Helvetica, sans-serif; color:#224990; text-decoration:none;}
+#container #contCenterFull a:visited
+	{font: 12px Verdana, Arial, Helvetica, sans-serif; color:#224990; text-decoration:none;}
+#container #contCenterFull a:hover
+	{font: 12px Verdana, Arial, Helvetica, sans-serif; color:#224990; text-decoration:underline;}
+	
+/*** right full column / alumni newsletter anchor styles ********************************************************/
+#container #contCenterFull #alumniNewsletter {float: left;}
+#container #contCenterFull #alumniNewsletter a:link 
+	{font: 12px Verdana, Arial, Helvetica, sans-serif; color:#224990; text-decoration:none;}
+#container #contCenterFull #alumniNewsletter a:visited
+	{font: 12px Verdana, Arial, Helvetica, sans-serif; color:#224990; text-decoration:none;}
+#container #contCenterFull #alumniNewsletter a:hover
+	{font: 12px Verdana, Arial, Helvetica, sans-serif; color:#224990; text-decoration:underline;}
+	
+/*** right full column / Resource Guide ********************************************************/	
+#container #contCenterFull #ppUpdate{
+	width: 500px; 
+	float: left
+}
+#container #contCenterFull #ppUpdate .fieldDiv{
+	padding: 10px; 
+	margin-bottom: 10px;
+}
+
+#container #contCenterFull #ppUpdate .fieldDiv .legendStyle1{
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif; 
+	color:#064188; 
+
+}
+
+#container #contCenterFull #resourceGuide{
+	float:left;
+	width: 400px;
+}
+/*** right column quotes *****/
+#container #contCenterFull .spotLight{
+	float:left;
+	margin-left:20px;
+	width:181px;
+	margin-bottom: 10px;
+}
+#container #contCenterFull .spotLight .spotLightTop{
+	width: 181px;
+	height: 13px;
+	background : url(/images/rGuideTop.jpg);
+}
+#container #contCenterFull .spotLight .spotLightBody{
+	width: 161px;
+	background : url(/images/rGuideGradient.jpg) repeat-y;
+	padding: 1px 10px 1px 10px;
+	font-size:11px
+}
+#container #contCenterFull .spotLight .spotLightBottom{
+	width: 181px;
+	height: 13px;
+	background : url(/images/rGuideBottom.jpg);
+}
+
+#container #contCenterFull .singleBar{
+	width: 480px; 
+	border-top: 1px solid #cccccc; 
+	height: 1px;
+}
+
+/*** footer of right full column ********************************************************/
+#container #contCenterFull #footerContainer{
+	padding-top: 50px;
+	font: 9px Verdana, Arial, Helvetica, sans-serif; color:#6A6969; 
+}
+#container #contCenterFull #footerContainer a:link 
+	{font: 9px Verdana, Arial, Helvetica, sans-serif; color:#224990; text-decoration:none;}
+#container #contCenterFull #footerContainer  a:visited
+	{font: 9px Verdana, Arial, Helvetica, sans-serif; color:#224990; text-decoration:none;}
+#container #contCenterFull #footerContainer  a:hover
+	{font: 9px Verdana, Arial, Helvetica, sans-serif; color:#224990; text-decoration:underline;}
+
+/*** site wide footer ********************************************************/
+
+#footer {
+	background:url("/images/innerBk.gif") repeat-y scroll 0 0 transparent;
+	color:#6A6969;
+	font:9px Verdana,Arial,Helvetica,sans-serif;
+	height:40px;
+	margin:0 auto 0;
+	padding:0 0 0 220px;
+	text-align:left;
+	width:745px;
+}
+
+#footer a:link 
+	{font: 9px Verdana, Arial, Helvetica, sans-serif; color:#224990; text-decoration:none;}
+#footer a:visited
+	{font: 9px Verdana, Arial, Helvetica, sans-serif; color:#224990; text-decoration:none;}
+#footer a:hover
+	{font: 9px Verdana, Arial, Helvetica, sans-serif; color:#224990; text-decoration:underline;}
+
+
+
+/*** Accordian Styles ********************************************************/
+/*** Accordian Styles ********************************************************/
+/*** Accordian Styles ********************************************************/
+
+#container #contLeft #ctl00_alumniNewsletterMenu2010 {
+	width: 178px;
+}
+#container #contLeft #ctl00_alumniNewsletterMenu2010 a.alumniNewsletterMenuItem2010 {
+	cursor:pointer;
+	display:block;
+	margin-top: 0;
+	text-decoration: none;
+	outline:0;
+	clear: both;
+	line-height: 40px;
+	color: #DCB57E;
+	background-color: #371F0D;
+}
+
+a.accordian:link 
+	{font: 12px Verdana, Arial, Helvetica, sans-serif; color:#ffffff; text-decoration:none;}
+a.accordian:visited
+	{font: 12px Verdana, Arial, Helvetica, sans-serif; color:#ffffff; text-decoration:none;}
+a.accordian:hover
+	{font: 12px Verdana, Arial, Helvetica, sans-serif; color:#ffffff; text-decoration:underline;}
+
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+a.boldbuttons{
+background: transparent url('/images/roundedge-gray-left.gif') no-repeat top left;
+display: block;
+float: left;
+font: bold 13px Arial; /* Change 13px as desired */
+line-height: 22px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 30px) */
+height: 30px; /* Height of button background height */
+padding-left: 8px; /* Width of left menu image */
+text-decoration: none;
+
+}
+
+a:link.boldbuttons, a:visited.boldbuttons, a:hover.boldbuttons, a:active.boldbuttons{
+color: white; /*button text color*/
+}
+
+a.boldbuttons span{
+background: transparent url('/images/roundedge-gray-right.gif') no-repeat top right;
+display: block;
+padding: 4px 10px 4px 2px; /*Set 10px to be equal or greater than'padding-left' value above*/
+}
+
+a:hover.boldbuttons{ /* Hover state CSS */
+text-decoration: underline;
+}
+
+
+.buttonwrapper{ /* Container you can use to surround a CSS button to clear float */
+overflow: hidden; /*See: http://www.quirksmode.org/css/clearing.html */
+width: 100%;
+}
+
+
+
+/*** CMS Styles ********************************************************/
+/*** CMS Styles ********************************************************/
+/*** CMS Styles ********************************************************/
+
+.smallertext {
+	line-height:13px;
+	font-size:11px;
+	margin-left:0px;
+	font-family:Verdana, Helvetica, Tahoma, Arial, sans-serif;
+}
+.BoldRed{
+	padding: 0px; 
+	margin: 0px;
+	font: bold italic 14px Verdana, Arial, Helvetica, sans-serif; color:#dc2632; 
+	line-height:14px;
+}	
+.BoldBlue{
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif; color:#224990; 
+	line-height:14px;
+}	
+
+.BoldWhiteTitle{
+	padding: 0px; 
+	margin: 0px;
+	font: bold 16px Verdana, Arial, Helvetica, sans-serif; color:#fbfbfb; 
+	line-height:14px;
+}	
+.BoldGreyTitle{
+	padding: 0px; 
+	margin: 0px;
+	font: bold 16px Verdana, Arial, Helvetica, sans-serif; color:#5e5e5e; 
+	line-height:14px;
+}
+.EventsTitle{
+	padding: 0px; 
+	margin: 0px;
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif; color:#5e5e5e; 
+	line-height:14px;
+}	
+
+
+
+.shortFat{
+	padding: 0px; 
+	margin: 0px;
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif; color:#9e6049; 
+	line-height:14px;
+}
+.grayTitle{
+	padding: 0px; 
+	margin: 0px;
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif; color:#717171; 
+	line-height:14px;
+}
+.upcomingEventsDates{	
+	padding: 0px; 
+	margin: 0px;
+	font: 14px Verdana, Arial, Helvetica, sans-serif; color:#707070; 
+	line-height:16px;
+}
+.boldItalic{
+	padding: 0px; 
+	margin: 0px;
+	font: bold italic 14px Verdana, Arial, Helvetica, sans-serif; color:#707070; 
+	line-height:14px;
+}
+.BoldRed{
+	padding: 0px; 
+	margin: 0px;
+	font: bold 16px Verdana, Arial, Helvetica, sans-serif; color:#dc2632; 
+	line-height:14px;
+}
+.BoldBlue{
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif; color:#224990; 
+	line-height:14px;
+}
+.BoldWhiteTitle{
+	padding: 0px; 
+	margin: 0px;
+	font: bold 16px Verdana, Arial, Helvetica, sans-serif; color:#fbfbfb; 
+	line-height:14px;
+}	
+.BoldGreyTitle{
+	padding: 0px; 
+	margin: 0px;
+	font: bold 16px Verdana, Arial, Helvetica, sans-serif; color:#5e5e5e; 
+	line-height:14px;
+}	
+.EventsTitle{
+	padding: 0px; 
+	margin: 0px;
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif; color:#5e5e5e; 
+	line-height:14px;
+}	
+.smallertext {
+	line-height:13px;
+	font-size:11px;
+	margin-left:0px;
+	font-family:Verdana, Helvetica, Tahoma, Arial, sans-serif;
+}
+
+
+
+/*** Newsletter Styles ***/
+.newsL-date{
+	font-size: 9px; 
+	line-height: 11px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color: #064288;
+}
+.newsL-welcome{
+	line-height: 50px; 
+	font-family: arial black,avant garde; 
+	color: rgb(255, 255, 255); font-size: x-large;
+}
+.whiteText{
+	color:#FFFFFF;
+}
+.newsL-smallBlue{font-size: 16px; color: rgb(6, 65, 136);line-height:18px}
+.newsL-largeBlue{font-size: 24px; font-weight:bold;color: #064188;line-height:20px}
+.newsL-largeGrey{font-size: 24px; font-weight:bold;color: rgb(128, 128, 128);line-height:20px}

@@ -1,0 +1,88 @@
+.ajax__myTab .ajax__tab_header
+{
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+	color:#FFFFFF
+	/*border-bottom: solid 1px #999999;*/
+}
+.ajax__myTab .ajax__tab_outer
+{
+	padding-right: 7px;
+	height: 35px;
+	background-color: #C0C0C0;
+	margin-right: 2px;
+	border-right: solid 1px #666666;
+	border-top: solid 1px #aaaaaa;
+}
+.ajax__myTab .ajax__tab_inner
+{
+	padding-left: 3px;
+	background-color: #C0C0C0;
+}
+.ajax__myTab .ajax__tab_tab
+{
+	height: 25px;
+	padding: 4px;
+	margin: 0;
+}
+.ajax__myTab .ajax__tab_hover .ajax__tab_outer
+{
+	background-color: #064188;
+}
+.ajax__myTab .ajax__tab_hover .ajax__tab_inner
+{
+	background-color: #064188;
+}
+.ajax__myTab .ajax__tab_hover .ajax__tab_tab
+{
+}
+.ajax__myTab .ajax__tab_active .ajax__tab_outer
+{
+	background-color: #064188;
+	border-left: solid 1px #999999;
+}
+.ajax__myTab .ajax__tab_active .ajax__tab_inner
+{
+	background-color: #064188;
+}
+.ajax__myTab .ajax__tab_active .ajax__tab_tab
+{
+}
+.ajax__myTab .ajax__tab_body
+{
+	font-family: verdana,tahoma,helvetica;
+	font-size: 10pt;
+	border: 1px solid #999999;
+	border-top: 10px solid #064188;
+	padding: 8px;
+	background-color: #ffffff;
+}
+
+
+.btn, button, input[type="submit"] {
+    border: solid 2px #0272ac;
+    border-style:  ridge;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    cursor: hand;
+    color: #0272ac;
+    margin-left: 15px;
+} 
+
+
+/*
+.btn
+{
+   font-size:12px;
+   font-family:Verdana, Arial, Helvetica, sans-serif;
+   font-weight:bold;
+   color:#FFFFFF;
+   background-color:#004690;
+   border-style:none;
+   padding-bottom:7px;
+   padding-top:7px;
+   padding-left:15px;
+   padding-right:15px;
+}*/
+.btnRG{
+padding-bottom: 10px;
+}

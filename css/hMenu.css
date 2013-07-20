@@ -1,0 +1,179 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/hMenus/final_drop2.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the assocaited (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+/*
+dc2632 - red
+e2e2e2 - light 
+9d9d9d - dark
+
+*/
+
+
+/* style the outer div to give it width */
+.hMenu {
+	margin:auto;
+	width:965px; 
+	font-size:0.85em;
+	padding-bottom:2px;
+	z-index:100;
+}
+/* remove all the bullets, borders and padding from the default list styling */
+.hMenu ul {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	z-index:100;
+}
+.hMenu ul ul {
+	width:136px;
+	z-index:100;
+}
+/* float the list to make it horizontal and a relative positon so that you can control the dropdown hMenu positon */
+.hMenu li {
+	float:left;
+	position:relative;
+	z-index:100;
+}
+/* style the links for the top level */
+.hMenu a, .hMenu a:visited {
+	display:block;
+	font-size:11px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bolder;
+	text-decoration:none;
+	text-align:center;
+	text-indent: -0.2cm;
+	color:#ffffff;
+	height:30px; 
+	/*border:1px solid #fff; 
+	border-width:1px 1px 0 0; */
+	padding-left:35px;
+	padding-right:30px;
+	line-height:29px;
+	z-index:100;
+	background:#dc2632;  /* mouse-off */
+}
+/* a hack so that IE5.5 faulty box model is corrected */
+* html .hMenu a, * html .hMenu a:visited {
+	width:193px;
+	w\idth:182px;
+}
+/* style the second level background */
+.hMenu ul ul a.drop, .hMenu ul ul a.drop:visited {
+	background:#9d9d9d;
+	color: #fff;
+}
+/* style the second level hover */
+.hMenu ul ul a.drop:hover{
+	background:#e2e2e2;
+}
+.hMenu ul ul :hover > a.drop {
+	background:bde0ff;
+	color: #000;
+}
+/* style the third level background */
+.hMenu ul ul ul a, .hMenu ul ul ul a:visited {
+	background:#e2e2e2;
+	color:fff;
+}
+/* style the third level hover */
+.hMenu ul ul ul a:hover {
+	background:#9d9d9d;
+	color:fff;	
+}
+.hMenu ul ul ul :hover > a {
+	background:9d9d9d;
+	color:fff;
+}
+
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+.hMenu ul ul {
+	visibility:hidden;
+	position:absolute;
+	height:0;
+	top:30px;
+	left:0; 
+	width:150px;
+	
+}
+/* another hack for IE5.5 */
+* html .hMenu ul ul {
+	top:30px;
+	t\op:31px;
+}
+
+/* position the third level flyout hMenu */
+.hMenu ul ul ul{
+	left:190px; 
+	top:0;
+	width:150px;
+}
+/* position the third level flyout hMenu for a left flyout */
+.hMenu ul ul ul.left {
+	left:-150px;
+}
+/* style the table so that it takes no part in the layout - required for IE to work */
+.hMenu table {
+	position:absolute; 
+	top:0; 
+	left:0;
+}
+/* style the second level links */
+.hMenu ul ul a, .hMenu ul ul a:visited {
+	background:#e2e2e2; 
+	color:#9d9d9d; 
+	height:auto; 
+	line-height:1em; 
+	padding:5px 10px; 
+	width:172px;
+	font-weight:400;
+	text-align:left;
+	text-indent: 0cm;
+
+	/* yet another hack for IE5.5 */
+}
+* html .hMenu ul ul a{
+	width:150px;
+	w\idth:182px;
+}
+
+
+/* style the top level hover */
+.hMenu a:hover, .hMenu ul ul a:hover{
+	color:#fff; 
+	background:#9d9d9d;
+}
+.hMenu :hover > a, .hMenu ul ul :hover > a {
+	color:#fff;
+	/*background:#949e7c;*/
+	background:#9d9d9d;
+}
+
+/* make the second level visible when hover on first level list OR link */
+.hMenu ul li:hover ul,
+.hMenu ul a:hover ul{
+	visibility:visible; 
+	
+}
+/* keep the third level hidden when you hover on first level list OR link */
+.hMenu ul :hover ul ul{
+	visibility:hidden;
+}
+/* keep the fourth level hidden when you hover on second level list OR link */
+.hMenu ul :hover ul :hover ul ul{
+	visibility:hidden;
+}
+/* make the third level visible when you hover over second level list OR link */
+.hMenu ul :hover ul :hover ul{ 
+	visibility:visible;
+}
+/* make the fourth level visible when you hover over third level list OR link */
+.hMenu ul :hover ul :hover ul :hover ul { 
+	visibility:visible;
+}

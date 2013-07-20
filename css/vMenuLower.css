@@ -1,0 +1,108 @@
+
+/* ================================================================
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/vMenuLowers/flyout2.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the assocaited (x)html may be modified in any
+way to fit your requirements.
+=================================================================== */
+
+
+/*
+bcbcbc - dark grey
+*/
+.vMenuLower {
+	z-index:1;
+	font-size:10px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px 0px 0px 0px /* this page only */
+}
+
+vMenuLower { 
+font-size:10px;
+}
+
+/* remove all the bullets, borders and padding from the default list styling */
+.vMenuLower ul {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	width:178px;
+}
+/* hack for IE5.5 */
+* html .vMenuLower ul {margin-left:-16px; ma\rgin-left:0;}
+/* position relative so that you can position the sub levels */
+.vMenuLower li {
+	position:relative;
+	background:#bcbcbc;
+	height:26px;
+}
+
+/* get rid of the table */
+.vMenuLower table {position:absolute; border-collapse:collapse; top:0; left:0; z-index:100; font-size:1em;}
+
+/* style the links */
+.vMenuLower a, .vMenuLower a:visited {
+	display:block;
+	font-size:12px;
+	text-decoration:none;
+	height:25px;
+	line-height:25px;
+	width:178px;
+	color:#fff;
+	text-indent:15px;
+	border-bottom:1px solid #fff;
+	border-width:0 1px 1px 0;
+}
+/* hack for IE5.5 */
+* html .vMenuLower a, * html .vMenuLower a:visited {
+	/*background:#b1cbf1;*/ 
+	background:#B2CCF1; 
+	width:178px; 
+	w\idth:177px;
+}
+/* style the link hover */
+* html .vMenuLower a:hover {
+	color:#fff; 
+	/*background:#BB8900;*/
+	background:#333;
+}
+
+.vMenuLower :hover > a {
+	color:#fff;
+	/*background:#BB8900;*/
+	background:#333;
+}
+
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+.vMenuLower ul ul {
+	visibility:hidden;
+	position:absolute;
+	top:0;
+	left:178px;
+}
+/* make the second level visible when hover on first level list OR link */
+.vMenuLower ul li:hover ul,
+.vMenuLower ul a:hover ul {
+	visibility:visible;
+}
+
+/* keep the third level hidden when you hover on first level list OR link */
+.vMenuLower ul :hover ul ul{
+	visibility:hidden;
+}
+/* keep the fourth level hidden when you hover on second level list OR link */
+.vMenuLower ul :hover ul :hover ul ul{
+	visibility:hidden;
+}
+/* make the third level visible when you hover over second level list OR link */
+.vMenuLower ul :hover ul :hover ul{
+	visibility:visible;
+}
+/* make the fourth level visible when you hover over third level list OR link */
+.vMenuLower ul :hover ul :hover ul :hover ul {
+	visibility:visible;
+}
+
