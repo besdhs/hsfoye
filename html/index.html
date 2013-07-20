@@ -243,18 +243,15 @@
 				<div id="ctl00_ContentPlaceHolder1_ContentBlock1">
 
 					<h1>
-						<a id="top" class="bookmark" title="top" name="top"></a> {{title}}
+						<a id="top" class="bookmark" title="top" name="top"></a> {{title}} {{curr_url}}
 						
 						<html>
   
-  <!-- adding buttons  -->
-  <body>
-    <form action="/sign" method="post">
-      <div><textarea name="content" rows="3" cols="60"></textarea></div>
-      <div><input type="submit" value="Sign Guestbook"></div>
-    </form>
-  </body>
-</html>
+  				<!-- adding buttons  -->
+  				<ul>
+  				<li><a href={{curr_url}}>Events</a></li>
+  				<li><a href={{college_url}}>Events</a></li>
+  				</ul>
 						
 					</h1>
 
