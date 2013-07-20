@@ -20,7 +20,8 @@ class MainPage(webapp.RequestHandler):
         
 
 class ResourceTypePage(webapp.RequestHandler):
-    
+    pass
+
 application = webapp.WSGIApplication([('/', MainPage)], debug=True)
 
 
