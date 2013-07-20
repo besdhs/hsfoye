@@ -13,7 +13,7 @@ class MainPage(webapp.RequestHandler):
     def get(self):
         self.response.headers['Content-Type'] = 'text/html'
         values = {
-            "title": "Main Page",
+            "title": "HSF Oye",
             "urls": [],
         }
         self.response.out.write(template.render('html/index.html', values))
