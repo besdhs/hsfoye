@@ -12,4 +12,45 @@
 <li><a href={{curr_url}}>College Guidance</a></li>
 <li><a href={{curr_url}}>Career Guidance</a></li>
 </ol>
+
+{% endblock %}
+
+{% block filter %} 
+
+
+<form method="post" action="/middle">
+<input float=left type="checkbox" name="lang" value="Spanish">Spanish
+<select float=left name="individual">
+<option value="parent">Parent</option>
+<option value="student">Student</option>
+<option value="educator">Educator</option>
+</select>
+<textarea float=left rows="1" cols="25">
+Key word search
+</textarea>
+
+Rating
+<select name="Ratings">
+<option value="na">- -</option>
+<option value="five">5</option>
+<option value="four">4</option>
+<option value="three">3</option>
+<option value="two">2</option>
+<option value="one">1</option>
+</select>
+
+<p><p><input type="submit" /></p></p>
+</form>
+
+{% endblock %}
+
+{% block results %}
+
+{% for res in resources %}
+	<p>
+	<h2> {{res.name}} </h2>
+	<a href={{res.website}}>{{res.website}}</a>, {{res.overview}}
+	</p>
+{% endfor %}
+
 {% endblock %}

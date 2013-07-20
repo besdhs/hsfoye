@@ -30,5 +30,23 @@ class Resource(ndb.Model):
         return cls.query()
         
     @classmethod
-    def getResourcesForCollege(cls):
-        return cls.query(Resource.grade == COLLEGE)
+    def getResourcesForCollege(cls, queries):
+        return queries.filter(Resource.grade == COLLEGE)
+    
+    @classmethod
+    def getResourcesFor6Through8(cls, queries):
+        return queries.filter(Resource.grade == GRADE6_8)
+    
+    @classmethod
+    def getResourcesFor9Through12(cls, queries):
+        return queries.filter(Resource.grade == GRADE9_12)
+    
+    @classmethod
+    def getResourcesForAlumni(cls, queries):
+        return queries.filter(Resource.grade == ALUMNI)
+    
+    @classmethod
+    def getResourcesForSpanish(cls, queries, spanish):
+        return queries.filter(Resource.spanish == spanish)
+    
+    

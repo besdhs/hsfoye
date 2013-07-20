@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+
+{% block title %} Add A Scholarship {% endblock %}
+
+{% block content %} 
+
+<form method="post" action="/processaddscholarship">
+Organization name: <input type="text" name="oname"><br>
+Scholarship name: <input type="text" name="sname"><br>
+Academic Level: <select name="acalevel">
+  <option value="highschool">Highschool</option>
+  <option value="college">Undergrad</option>
+  <option value="grad">Graduate</option>
+</select><br>
+Minimum GPA: <input type="text" name="gpa"><br>
+Citizenship Level: <select name="citlevel">
+  <option value="uscitizen">Citizen</option>
+  <option value="dual">Dual citizen</option>
+  <option value="alien">Not a citizen</option>
+</select> </br>
+Eligibility Criteria: 
+<textarea rows="5" cols="50" name="eligibility">
+</textarea><br>
+Requirements: 
+<textarea rows="5" cols="50" name="requirements">
+</textarea><br>
+Website: <input type="text" name="website"><br>
+<p><input type="submit" /></p>
+</form>
+
+{% endblock %}
+
+{% block filter %} 
+
+{% endblock %}
+
+{% block results %}
+
+{% endblock %}

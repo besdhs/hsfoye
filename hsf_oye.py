@@ -41,20 +41,57 @@ class CollegeTypePage(webapp2.RedirectHandler):
     
     def get(self):
         self.response.headers['Content-Type'] = 'text/html'
+        resources = Resource.getResources()
+        resources = Resource.getResourcesForCollege(resources)
         values = {
             "title": "College",
             "scholarship": self.request.url + "/scholarship",
             "curr_url": self.request.url,
+            "resources": resources
         }
         self.response.out.write(template.render('html/college.html', values))
+    
+    def post(self):
+        lang = self.request.get("lang")
+        resources = Resource.getResources()
+        if lang:
+            resources = Resource.getResourcesForSpanish(resources, True)
+        resources = Resource.getResourcesForCollege(resources)
+        values = {
+            "title": "College",
+            "scholarship": self.request.url + "/scholarship",
+            "curr_url": self.request.url,
+            "resources": resources    
+        }
+        self.response.out.write(template.render('html/college.html', values))
+        
+#             #Process queries further
+#         individual = self.request.get("individual")
+#         print str(lang) + str(individual)
         
 class HighSchoolTypePage(webapp2.RedirectHandler):
     
     def get(self):
         self.response.headers['Content-Type'] = 'text/html'
+        resources = Resource.getResources()
+        resources = Resource.getResourcesFor9Through12(resources)
         values = {
             "title": "High School",
             "curr_url": self.request.url,
+            "resources": resources
+        }
+        self.response.out.write(template.render('html/highschool.html', values))
+        
+    def post(self):
+        lang = self.request.get("lang")
+        resources = Resource.getResources()
+        if lang:
+            resources = Resource.getResourcesForSpanish(resources, True)
+        resources = Resource.getResourcesFor9Through12(resources)
+        values = {
+            "title": "High School",
+            "curr_url": self.request.url,
+            "resources": resources    
         }
         self.response.out.write(template.render('html/highschool.html', values))
         
@@ -62,9 +99,23 @@ class MiddleTypePage(webapp2.RedirectHandler):
     
     def get(self):
         self.response.headers['Content-Type'] = 'text/html'
+        resources = Resource.getResources()
+        resources = Resource.getResourcesFor6Through8(resources)
         values = {
             "title": "Middle School",
             "curr_url": self.request.url,
+        }
+        self.response.out.write(template.render('html/middle.html', values))
+    def post(self):
+        lang = self.request.get("lang")
+        resources = Resource.getResources()
+        if lang:
+            resources = Resource.getResourcesForSpanish(resources, True)
+        resources = Resource.getResourcesFor6Through8(resources)
+        values = {
+            "title": "Middle School",
+            "curr_url": self.request.url,
+            "resources": resources    
         }
         self.response.out.write(template.render('html/middle.html', values))
         
@@ -90,13 +141,28 @@ class CollegeScholarship(webapp2.RedirectHandler):
         }
         self.response.out.write(template.render('html/cship.html', values))          
 
+class ScholarshipSubmission(webapp2.RedirectHandler):
+    
+   def post(self):
+       pass
+   
+class ScholarshipAdder(webapp2.RedirectHandler):
+        
+    def get(self):
+        values = {
+            "title": "Add a Scholarship",
+        }
+        self.response.headers['Content-Type'] = 'text/html'
+        self.response.out.write(template.render('html/addscholarship.html', values))          
+
 application = webapp2.WSGIApplication([('/', MainPage),
                                       ('/college', CollegeTypePage),
                                       ('/highschool', HighSchoolTypePage),
                                       ('/alumni', AlumniTypePage),
                                       ('/middle', MiddleTypePage),
-                                      ('/college', CollegeTypePage),
-                                      ('/college/scholarship', CollegeScholarship),], debug=True)
+                                      ('/college/scholarship', CollegeScholarship),
+                                      ('/addscholarship', ScholarshipAdder),
+                                      ('/processaddscholarship', ScholarshipSubmission),], debug=True)
 
 
 def main():
